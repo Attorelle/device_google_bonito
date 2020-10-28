@@ -130,3 +130,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
+
+# Enable zygote critical window.
+PRODUCT_PROPERTY_OVERRIDES += \
+    zygote.critical_window.minute=10
