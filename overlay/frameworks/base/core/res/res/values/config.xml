@@ -265,6 +265,10 @@
          and one pSIM) -->
     <integer name="config_num_physical_slots">2</integer>
 
+    <!-- List of comma separated package names for which we the system will not show crash, ANR,
+         etc. dialogs. -->
+    <string translatable="false" name="config_appsNotReportingCrashes">com.google.android.euicc</string>
+
     <!-- Disables compatibility WAL mode.
          In this mode, only database journal mode will be changed, connection pool
          size will still be limited to a single connection. -->
