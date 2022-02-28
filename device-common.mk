@@ -132,6 +132,10 @@ PRODUCT_PACKAGES += \
     android.hardware.rebootescrow-V1-ndk_platform.vendor:64 \
     libgui_shim
     
+# AiAi Config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/config/etc/allowlist_com.google.android.as.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/allowlist_com.google.android.as.xml
+
 # EUICC permission
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
