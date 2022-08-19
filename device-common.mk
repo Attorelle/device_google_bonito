@@ -121,6 +121,15 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.protected_contents=true
 # Set thermal warm reset
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.thermal_warmreset = true \
+
+# Shims
+PRODUCT_PACKAGES += \
+    android.frameworks.stats-V1-ndk_platform.vendor:64 \
+    android.hardware.identity-V3-ndk_platform.vendor:64 \
+    android.hardware.keymaster-V3-ndk_platform.vendor:64 \
+    android.hardware.power-V1-ndk_platform.vendor:64 \
+    android.hardware.power.stats-V1-ndk_platform:64 \
+    android.hardware.rebootescrow-V1-ndk_platform.vendor:64
     
 # EUICC permission
 PRODUCT_COPY_FILES += \
