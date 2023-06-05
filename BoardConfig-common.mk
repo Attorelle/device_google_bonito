@@ -200,14 +200,14 @@ TARGET_USES_COLOR_METADATA := true
 TARGET_USES_DRM_PP := true
 
 # Vendor Interface Manifest
-DEVICE_MANIFEST_FILE := device/google/bonito/manifest.xml
-DEVICE_MATRIX_FILE := device/google/bonito/compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := device/google/bonito/device_framework_matrix.xml
+DEVICE_MANIFEST_FILE := device/google/bonito/config/manifests/manifest.xml
+DEVICE_MATRIX_FILE := device/google/bonito/config/manifests/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := device/google/bonito/config/manifests/device_framework_matrix.xml
 
 # Userdebug only Vendor Interface Manifest
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-DEVICE_FRAMEWORK_MANIFEST_FILE += device/google/bonito/framework_manifest_userdebug.xml
-DEVICE_MATRIX_FILE += device/google/bonito/compatibility_matrix_userdebug.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE += device/google/bonito/config/manifests/framework_manifest_userdebug.xml
+DEVICE_MATRIX_FILE += device/google/bonito/config/manifests/compatibility_matrix_userdebug.xml
 endif
 
 ODM_MANIFEST_SKUS := \
