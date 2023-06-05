@@ -495,7 +495,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sensors/hals.conf:vendor/etc/sensors/hals.conf
+    $(LOCAL_PATH)/config/sensors/hals.conf:vendor/etc/sensors/hals.conf
 
 # Default permission grant exceptions
 PRODUCT_COPY_FILES += \
