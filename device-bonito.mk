@@ -51,7 +51,7 @@ PRODUCT_PRODUCT_PROPERTIES +=\
 
 # DRV2624 Haptics Waveform
 PRODUCT_COPY_FILES += \
-    device/google/bonito/vibrator/drv2624/drv2624_B4.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/drv2624.bin
+    device/google/bonito/config/vibrator/drv2624/drv2624_B4.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/drv2624.bin
 
 # camera front flashColor
 PRODUCT_PROPERTY_OVERRIDES += \

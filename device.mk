@@ -740,8 +740,8 @@ PRODUCT_COPY_FILES += \
 
 # CS40L20 Haptics Waveform & Firmware
 PRODUCT_COPY_FILES += \
-    device/google/bonito/vibrator/cs40l20/cs40l20.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l20.wmfw \
-    device/google/bonito/vibrator/cs40l20/cs40l20.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l20.bin
+    device/google/bonito/config/vibrator/cs40l20/cs40l20.wmfw:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l20.wmfw \
+    device/google/bonito/config/vibrator/cs40l20/cs40l20.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/cs40l20.bin
 
 PRODUCT_VENDOR_KERNEL_HEADERS := device/google/bonito/sdm710/kernel-headers
 
