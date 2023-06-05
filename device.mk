@@ -604,11 +604,11 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_a2dp_offload_disabled.xml \
-    $(LOCAL_PATH)/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
-    $(LOCAL_PATH)/bluetooth_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_hearing_aid_audio_policy_configuration.xml \
-    $(LOCAL_PATH)/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    $(LOCAL_PATH)/config/audio/configs/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/config/audio/configs/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_a2dp_offload_disabled.xml \
+    $(LOCAL_PATH)/config/audio/configs/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
+    $(LOCAL_PATH)/config/audio/configs/bluetooth_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_hearing_aid_audio_policy_configuration.xml \
+    $(LOCAL_PATH)/config/audio/configs/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration_7_0.xml \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration_7_0.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration_7_0.xml \
@@ -621,18 +621,18 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/mixer_paths_intcodec_b4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_intcodec_b4.xml \
     $(LOCAL_PATH)/mixer_paths_intcodec_b4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_intcodec_b4dev.xml \
-    $(LOCAL_PATH)/audio_platform_info_intcodec_b4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec_b4.xml \
-    $(LOCAL_PATH)/audio_platform_info_intcodec_b4dev.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec_b4dev.xml \
-    $(LOCAL_PATH)/mixer_paths_intcodec_s4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_intcodec_s4.xml \
-    $(LOCAL_PATH)/mixer_paths_intcodec_s4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_intcodec_s4dev.xml \
-    $(LOCAL_PATH)/audio_platform_info_intcodec_s4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec_s4.xml \
-    $(LOCAL_PATH)/audio_platform_info_intcodec_s4dev.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec_s4dev.xml
+    $(LOCAL_PATH)/config/audio/configs/audio_platform_info_intcodec_b4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec_b4.xml \
+    $(LOCAL_PATH)/config/audio/configs/audio_platform_info_intcodec_b4dev.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec_b4dev.xml \
+    $(LOCAL_PATH)/config/audio/configs/mixer_paths_intcodec_s4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_intcodec_s4.xml \
+    $(LOCAL_PATH)/config/audio/configs/mixer_paths_intcodec_s4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_intcodec_s4dev.xml \
+    $(LOCAL_PATH)/config/audio/configs/audio_platform_info_intcodec_s4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec_s4.xml \
+    $(LOCAL_PATH)/config/audio/configs/audio_platform_info_intcodec_s4dev.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec_s4dev.xml
 
 # audio hal tables
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml \
-    $(LOCAL_PATH)/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
-    $(LOCAL_PATH)/graphite_ipc_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/graphite_ipc_platform_info.xml \
+    $(LOCAL_PATH)/config/audio/configs/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml \
+    $(LOCAL_PATH)/config/audio/configs/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
+    $(LOCAL_PATH)/config/audio/configs/graphite_ipc_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/graphite_ipc_platform_info.xml \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
