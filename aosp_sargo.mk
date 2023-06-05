@@ -61,7 +61,13 @@ ifneq (REL,$(PLATFORM_VERSION_CODENAME))
 endif
 
 PRODUCT_MANUFACTURER := Google
-PRODUCT_BRAND := Android
+PRODUCT_BRAND := google
 PRODUCT_NAME := aosp_sargo
 PRODUCT_DEVICE := sargo
-PRODUCT_MODEL := AOSP on sargo
+PRODUCT_MODEL := Pixel 3a
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=sargo \
+    PRIVATE_BUILD_DESC="sargo-user 12 SP2A.220505.008 8782922 release-keys"
+
+BUILD_FINGERPRINT := google/sargo/sargo:12/SP2A.220505.008/8782922:user/release-keys

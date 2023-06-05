@@ -61,7 +61,13 @@ ifneq (REL,$(PLATFORM_VERSION_CODENAME))
 endif
 
 PRODUCT_MANUFACTURER := Google
-PRODUCT_BRAND := Android
+PRODUCT_BRAND := google
 PRODUCT_NAME := aosp_bonito
 PRODUCT_DEVICE := bonito
-PRODUCT_MODEL := AOSP on bonito
+PRODUCT_MODEL := Pixel 3a XL
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=bonito \
+    PRIVATE_BUILD_DESC="bonito-user 12 SP2A.220505.008 8782922 release-keys"
+
+BUILD_FINGERPRINT := google/bonito/bonito:12/SP2A.220505.008/8782922:user/release-keys
