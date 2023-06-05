@@ -87,7 +87,7 @@ BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Partitions (listed in the file) to be wiped under recovery.
 TARGET_RECOVERY_WIPE := device/google/bonito/recovery.wipe
-TARGET_RECOVERY_FSTAB := device/google/bonito/fstab.hardware
+TARGET_RECOVERY_FSTAB := device/google/bonito/rootdir/etc/fstab.hardware
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_UI_LIB := \
     librecovery_ui_pixel \
