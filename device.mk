@@ -654,7 +654,7 @@ PRODUCT_COPY_FILES += \
 
 # Vendor seccomp policy files for media components:
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
+    $(LOCAL_PATH)/config/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 # Subsystem ramdump
