@@ -220,14 +220,14 @@ ODM_MANIFEST_SKUS := \
     G020G \
     G020H \
 
-ODM_MANIFEST_G020A_FILES := device/google/bonito/nfc/manifest_se_SIM1.xml
-ODM_MANIFEST_G020B_FILES := device/google/bonito/nfc/manifest_se_SIM1.xml
-ODM_MANIFEST_G020C_FILES := device/google/bonito/nfc/manifest_se_SIM1.xml
-ODM_MANIFEST_G020D_FILES := device/google/bonito/nfc/manifest_se_eSE1.xml
-ODM_MANIFEST_G020E_FILES := device/google/bonito/nfc/manifest_se_SIM1.xml
-ODM_MANIFEST_G020F_FILES := device/google/bonito/nfc/manifest_se_SIM1.xml
-ODM_MANIFEST_G020G_FILES := device/google/bonito/nfc/manifest_se_SIM1.xml
-ODM_MANIFEST_G020H_FILES := device/google/bonito/nfc/manifest_se_eSE1.xml
+ODM_MANIFEST_G020A_FILES := device/google/bonito/config/nfc/manifest_se_SIM1.xml
+ODM_MANIFEST_G020B_FILES := device/google/bonito/config/nfc/manifest_se_SIM1.xml
+ODM_MANIFEST_G020C_FILES := device/google/bonito/config/nfc/manifest_se_SIM1.xml
+ODM_MANIFEST_G020D_FILES := device/google/bonito/config/nfc/manifest_se_eSE1.xml
+ODM_MANIFEST_G020E_FILES := device/google/bonito/config/nfc/manifest_se_SIM1.xml
+ODM_MANIFEST_G020F_FILES := device/google/bonito/config/nfc/manifest_se_SIM1.xml
+ODM_MANIFEST_G020G_FILES := device/google/bonito/config/nfc/manifest_se_SIM1.xml
+ODM_MANIFEST_G020H_FILES := device/google/bonito/config/nfc/manifest_se_eSE1.xml
 
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
