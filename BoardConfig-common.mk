@@ -124,6 +124,8 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_ROOT_EXTRA_SYMLINKS := /mnt/vendor/persist:/persist
 BOARD_ROOT_EXTRA_SYMLINKS += /vendor/dsp:/dsp
 
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+
 include device/google/bonito-sepolicy/bonito-sepolicy.mk
 
 TARGET_FS_CONFIG_GEN := device/google/bonito/config.fs
