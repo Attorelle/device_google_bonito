@@ -1,5 +1,5 @@
 #
-# Copyright 2015 The Android Open Source Project
+# Copyright 2016 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,14 +14,16 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_bonito.mk \
-    $(LOCAL_DIR)/aosp_sargo.mk \
-    $(LOCAL_DIR)/bonito.mk \
-    $(LOCAL_DIR)/sargo.mk
+$(call inherit-product, device/google/bonito/hentai_common.mk)
+$(call inherit-product, device/google/bonito/device-sargo.mk)
 
-COMMON_LUNCH_CHOICES := \
-    aosp_bonito-userdebug \
-    aosp_sargo-userdebug \
-    bonito-userdebug \
-    sargo-userdebug
+PRODUCT_MANUFACTURER := Google
+PRODUCT_BRAND := google
+PRODUCT_NAME := sargo
+PRODUCT_DEVICE := sargo
+PRODUCT_MODEL := Pixel 3a
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="sargo-user 12 SP2A.220505.008 8782922 release-keys"
+
+BUILD_FINGERPRINT := google/sargo/sargo:12/SP2A.220505.008/8782922:user/release-keys
