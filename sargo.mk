@@ -27,3 +27,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="sargo-user 12 SP2A.220505.008 8782922 release-keys"
 
 BUILD_FINGERPRINT := google/sargo/sargo:12/SP2A.220505.008/8782922:user/release-keys
+
+$(call inherit-product, vendor/google/sargo/sargo-vendor.mk)
