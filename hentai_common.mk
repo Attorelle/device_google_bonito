@@ -42,7 +42,7 @@ $(call inherit-product, vendor/hentai/build/product/hentai_product.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 
-$(call inherit-product-if-exists, vendor/google_devices/bonito/proprietary/device-vendor.mk)
+$(call inherit-product, vendor/google_devices/bonito/proprietary/device-vendor.mk)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/audio/configs/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
